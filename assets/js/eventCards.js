@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var zindex = 10;
+  var z_index = 10;
 
   $("div.card").click(function (e) {
     e.preventDefault();
@@ -19,16 +19,16 @@ $(document).ready(function () {
         $("div.cards").removeClass("showing");
       } else {
         // this card isn't showing - get in with it
-        $(this).css({ zIndex: zindex }).addClass("show");
+        $(this).css({ zIndex: z_index }).addClass("show");
       }
 
-      zindex++;
+      z_index++;
     } else {
       // no cards in view
       $("div.cards").addClass("showing");
-      $(this).css({ zIndex: zindex }).addClass("show");
+      $(this).css({ zIndex: z_index }).addClass("show");
 
-      zindex++;
+      z_index++;
     }
   });
 });

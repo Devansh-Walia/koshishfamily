@@ -332,6 +332,10 @@ header .nav-items .menu-items .menu ul li a:hover {
   height: inherit;
   width: inherit;
 }
+body > main > div > div > video {
+  width: 500px;
+  height: auto;
+}
 .popup button {
   display: block;
   background-color: transparent;
@@ -368,6 +372,11 @@ header .nav-items .menu-items .menu ul li a:hover {
   .popup div {
     width: 80vw;
     height: 80%;
+  }
+
+  body > main > div > div > video {
+    width: 280px;
+    height: auto;
   }
 }
 
